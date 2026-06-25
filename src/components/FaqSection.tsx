@@ -21,7 +21,7 @@ export default function FaqSection({ faqs }: FaqSectionProps) {
         {/* Header */}
         <div className="text-center space-y-3">
           <span className="text-xs uppercase tracking-widest font-mono font-bold text-slate-400">
-            Drone FAQ
+            TN-Fly FAQ
           </span>
           <h2 className="font-sans font-extrabold text-3xl sm:text-4xl tracking-tight leading-tight uppercase" id="faq-heading">
             Frequently Asked Questions

@@ -101,7 +101,7 @@ export default function App() {
           <Testimonials />
 
           {/* 8. Flight Notes & Stories Blog Section */}
-          <BlogSection />
+          {/* <BlogSection /> */}
 
           {/* 9. Expandable drone FAQs */}
           <FaqSection 

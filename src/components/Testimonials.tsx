@@ -47,11 +47,20 @@ export default function Testimonials() {
   return (
     <section className="py-24 sm:py-32 bg-white text-slate-900 overflow-hidden relative" id="testimonials">
       <div className="max-w-4xl mx-auto px-6 sm:px-12 text-center space-y-10 relative z-10">
+
+         <div className="space-y-6 text-center lg:text-left max-w-3xl mx-auto">
+          <p className="text-xs uppercase tracking-widest text-slate-400">
+            Testimonial
+          </p>
+          <h2 className="font-sans font-extrabold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight">
+            What Our Clients Say
+          </h2>
+        </div>
         
         {/* Giant curved quotation symbol matching reference */}
-        <div className="flex justify-center" id="testimonials-quote-mark">
-          <span className="font-serif text-[120px] sm:text-[140px] leading-none text-slate-800 select-none">”</span>
-        </div>
+        {/* <div className="flex justify-center" id="testimonials-quote-mark">
+          <span className="font-serif text-[80px] sm:text-[90px] leading-none text-slate-800 select-none">”</span>
+        </div> */}
 
         {/* Dynamic Testimonial Carousel Text */}
         <div className="min-h-[140px] flex items-center justify-center">

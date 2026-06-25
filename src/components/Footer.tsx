@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
+import { Mail, Camera,  Phone, MapPin, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -23,11 +23,22 @@ export default function Footer() {
           
           {/* Column 1: Company Information */}
           <div className="lg:col-span-4 space-y-6">
-            <div className="flex items-center gap-2 text-white">
-              <span className="font-sans font-black text-lg tracking-widest uppercase">
-                ⚙️ DRONES
-              </span>
-            </div>
+            <div 
+          className="flex items-center gap-3 cursor-pointer select-none group"
+          
+        >
+          <div className="p-2 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
+            <Camera className="w-5 h-5 text-[#E8FF1A]" />
+          </div>
+          <div>
+            <h1 className="font-sans font-black text-sm md:text-base tracking-widest uppercase text-slate-500">
+              TN FLY<span className="text-slate-500 font-normal text-xs ml-1">DRONES</span>
+            </h1>
+            <span className="text-[9px] text-slate-400 block -mt-1 font-mono tracking-widest uppercase font-semibold">
+              Aerial Services
+            </span>
+          </div>
+        </div>
             <p className="text-xs sm:text-sm text-slate-500 leading-relaxed font-light">
               TN FLY specializes in professional aerial imagery, cinematic event coverage, precision surveys, and inspection flights for clients who need reliable drone production.
             </p>
@@ -48,7 +59,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Our Stores */}
-          <div className="lg:col-span-2 space-y-4">
+          {/* <div className="lg:col-span-2 space-y-4">
             <h4 className="font-sans font-bold text-xs uppercase tracking-wider text-white">
               Our Stores
             </h4>
@@ -60,7 +71,7 @@ export default function Footer() {
               <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Chicago</a></li>
               <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Las Vegas</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Column 3: Useful Links */}
           <div className="lg:col-span-3 space-y-4">
@@ -69,10 +80,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm font-light">
               <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Returns</a></li>
               <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Terms & Conditions</a></li>
               <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Latest News</a></li>
               <li><a href="#" className="hover:text-[#E8FF1A] transition-colors">Our Sitemap</a></li>
             </ul>
           </div>
@@ -103,7 +112,7 @@ export default function Footer() {
           
           {/* Left: payment icon mockup / copyright */}
           <div className="flex items-center gap-3">
-            <span className="text-slate-600">Copyright © 2026 dotbook. All rights reserved.</span>
+            <span className="text-slate-600">Copyright © 2026 TN-Fly. All rights reserved.</span>
             <div className="flex gap-1.5 opacity-40">
               <span className="px-1.5 py-0.5 bg-slate-800 text-[10px] rounded font-bold tracking-widest text-white">VISA</span>
               <span className="px-1.5 py-0.5 bg-slate-800 text-[10px] rounded font-bold tracking-widest text-white font-mono">MC</span>
