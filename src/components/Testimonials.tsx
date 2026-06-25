@@ -12,23 +12,23 @@ interface SingleTestimonial {
 const testimonials: SingleTestimonial[] = [
   {
     id: 't-1',
-    quote: 'Suspendisse in consectetur justo. Suspendisse molestie lorem accumsan mattis rutrum. Nunc facilisis ultricies mi, et porta diam lobortis non. In hac habitasse platea dictumst.',
+    quote: 'TN FLY delivered stunning aerial footage for our resort launch. The team was punctual, professional, and the final edit exceeded our expectations.',
     author: 'Brian Cumin',
-    role: 'HAPPY CUSTOMER',
+    role: 'Hospitality Director',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150',
   },
   {
     id: 't-2',
-    quote: 'Integer sodales elementum erat, vel molestie nisl porta sed. Mauris in elementum felis, at hendrerit elit. Ut molestie eros non ligula tempus eleifend. Vivamus eu magna mi.',
+    quote: 'Our construction survey became faster and safer with clear aerial inspection footage. The drone team helped us spot issues before they became costly delays.',
     author: 'Sarah Jenkins',
-    role: 'REAL ESTATE DEVELOPER',
+    role: 'Real Estate Developer',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
   },
   {
     id: 't-3',
-    quote: 'Praesent euismod vulputate urna, sit amet porta purus congue in. Quisque congue finibus arcu at tristique. Proin vel nisl eget urna convallis convallis ut ac justo.',
+    quote: 'Our wedding video featured epic aerial reveals and gentle cinematic movement. The drone team made the whole process feel effortless.',
     author: 'Marcus Sterling',
-    role: 'AERIAL SPECTATOR',
+    role: 'Event Coordinator',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150',
   }
 ];

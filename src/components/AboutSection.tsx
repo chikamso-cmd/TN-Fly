@@ -17,7 +17,7 @@ export default function AboutSection() {
             className="absolute top-0 left-0 w-[65%] aspect-[3/4] rounded-sm overflow-hidden shadow-2xl z-0"
           >
             <img 
-              src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=600" 
+              src="assets/photo.jpeg" 
               alt="Aerial view of scenic landscape at night" 
               className="w-full h-full object-cover filter brightness-90"
               referrerPolicy="no-referrer"
@@ -34,7 +34,7 @@ export default function AboutSection() {
             className="absolute bottom-0 right-0 w-[65%] aspect-[3/4] rounded-sm overflow-hidden shadow-2xl z-10 border-8 border-white"
           >
             <img 
-              src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=600" 
+              src="assets/drone-over-beach-stockcake.jpg" 
               alt="Hand holding drone over spectacular coast" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -74,10 +74,10 @@ export default function AboutSection() {
               </div>
               <div className="space-y-1">
                 <h4 className="font-sans font-bold text-base sm:text-lg text-slate-900 uppercase tracking-tight group-hover:text-rose-600 transition-colors">
-                  Year of Experience
+                  Decade of Flight Expertise
                 </h4>
                 <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-md">
-                  Mauris molestie erat et sollicitudin auctor Cres auctor feugiat lacinia. Aliquam non aliquet urna. Mauris dignissim leo.
+                  Trusted aerial pilots and cinematographers with years of experience capturing wedding, commercial, and film productions from above.
                 </p>
               </div>
             </motion.div>
@@ -98,7 +98,7 @@ export default function AboutSection() {
                   Elite Cinematic Standards
                 </h4>
                 <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-md">
-                  Mauris molestie erat et sollicitudin auctor Cres auctor feugiat lacinia. Aliquam non aliquet urna. Mauris dignissim leo.
+                  Every frame is graded, stabilized, and edited to cinematic standards so your aerial footage looks polished and powerful.
                 </p>
               </div>
             </motion.div>
@@ -119,7 +119,7 @@ export default function AboutSection() {
                   Dedicated Premium Service
                 </h4>
                 <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-md">
-                  Mauris molestie erat et sollicitudin auctor Cres auctor feugiat lacinia. Aliquam non aliquet urna. Mauris dignissim leo.
+                  Personal project coordination, fast communication, and a client-first approach for smooth booking and dependable flight execution.
                 </p>
               </div>
             </motion.div>

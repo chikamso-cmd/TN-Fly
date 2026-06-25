@@ -47,7 +47,7 @@ export default function HeroSection({ onExplore, onContact }: HeroSectionProps) 
               className="text-slate-300 text-xs sm:text-base md:text-lg font-light leading-relaxed max-w-lg"
               id="hero-supporting-text"
             >
-              These stores often offer variety of brands and models, giving customers best option that suits their needs and budget.
+              From cinematic event coverage to precision mapping and inspection flights, TN FLY delivers bold aerial visuals with fast turnarounds and professional support.
             </motion.p>
           </div>
 
@@ -64,7 +64,7 @@ export default function HeroSection({ onExplore, onContact }: HeroSectionProps) 
               className="px-6 py-3 sm:px-8 sm:py-4 bg-[#E8FF1A] hover:bg-[#d4eb14] text-black font-semibold text-[10px] sm:text-base tracking-wide rounded-sm transition-all duration-300 active:scale-95 shadow-lg hover:shadow-[#E8FF1A]/20 cursor-pointer"
               id="hero-primary-cta"
             >
-              Shop Now
+              Explore Services
             </button>
             
             {/* Secondary outline button */}
@@ -73,7 +73,7 @@ export default function HeroSection({ onExplore, onContact }: HeroSectionProps) 
               className="px-6 py-3 sm:px-8 sm:py-4 border border-white hover:bg-white/10 text-white font-semibold text-sm sm:text-base tracking-wide rounded-sm transition-all duration-300 active:scale-95 cursor-pointer"
               id="hero-secondary-cta"
             >
-              Contact Us
+              Book a Flight
             </button>
           </motion.div>
         </div>

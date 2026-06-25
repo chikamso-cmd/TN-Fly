@@ -7,7 +7,7 @@ export default function WhyChooseUs() {
     {
       id: 'lf-1',
       title: 'Robust Structure',
-      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      desc: 'High-strength carbon fiber construction for stable flight in windy conditions and reliable payload support.',
       top: '12%',
       left: '10%',
       dotX: '45%',
@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
     {
       id: 'lf-2',
       title: 'Foldable Drone',
-      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      desc: 'Fast, compact setup for rapid deployment on-location and convenient transport between shoots.',
       top: '46%',
       left: '8%',
       dotX: '34%',
@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
     {
       id: 'lf-3',
       title: 'HD Video Recording',
-      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      desc: 'Smooth 4K capture with advanced stabilization and dynamic auto-exposure for crisp aerial storytelling.',
       top: '78%',
       left: '10%',
       dotX: '45%',
@@ -37,8 +37,8 @@ export default function WhyChooseUs() {
   const rightFeatures = [
     {
       id: 'rf-1',
-      title: 'Easy Disassembly',
-      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      title: 'Reliable Production Support',
+      desc: 'A dedicated crew partners with you from briefing to final delivery, ensuring every frame matches your vision and event timeline.',
       top: '12%',
       right: '10%',
       dotX: '55%',
@@ -46,8 +46,8 @@ export default function WhyChooseUs() {
     },
     {
       id: 'rf-2',
-      title: 'Motors',
-      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      title: 'Fast Delivery',
+      desc: 'Quick editing workflows and efficient flight operations mean your photos and videos are ready for launch sooner.',
       top: '46%',
       right: '8%',
       dotX: '65%',
@@ -55,8 +55,8 @@ export default function WhyChooseUs() {
     },
     {
       id: 'rf-3',
-      title: 'Advance Technology',
-      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      title: 'Experienced Pilots',
+      desc: 'FAA-certified operators with extensive experience in events, real estate, inspections, and cinematic shoot environments.',
       top: '78%',
       right: '10%',
       dotX: '55%',
@@ -68,6 +68,18 @@ export default function WhyChooseUs() {
     <section className="py-24 sm:py-32 bg-white text-slate-900 relative overflow-hidden" id="diagram">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16 space-y-16">
         
+        <div className="space-y-6 text-center lg:text-left max-w-3xl mx-auto">
+          <p className="text-xs uppercase tracking-widest text-slate-400">
+            Why Choose Us
+          </p>
+          <h2 className="font-sans font-extrabold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight">
+            Professional Photo & Video Drone Coverage
+          </h2>
+          <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+            We blend cinematic aerial video with premium still photography to tell your story clearly and beautifully, backed by experienced pilots and reliable production support.
+          </p>
+        </div>
+
         {/* Technical Diagram Container */}
         <div className="relative w-full min-h-[500px] lg:min-h-[600px] flex items-center justify-center">
           
@@ -93,7 +105,7 @@ export default function WhyChooseUs() {
           {/* CENTER: Massive high-quality drone */}
           <div className="relative z-10 w-full max-w-[450px] lg:max-w-[550px] mx-auto py-12 lg:py-0 flex items-center justify-center">
             <motion.img 
-              src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&q=80&w=800"
+              src="assets/hero-drone.jpg"
               alt="Center drone feature diagram model"
               className="w-full h-auto object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] rounded-lg"
               referrerPolicy="no-referrer"

@@ -20,7 +20,7 @@ const blogPosts: BlogPost[] = [
     tagColor: 'text-[#C9DD14]',
     date: 'March 16, 2023',
     title: 'Exploring The Drone Universe.',
-    desc: 'Sed finibus amet dolor maximus sodales egestas ut elit id sollicitudin.',
+    desc: 'A behind-the-scenes look at how we plan cinematic aerial flights for events, real estate, and creative productions.',
     image: 'https://images.unsplash.com/photo-1501597301489-8b75b675ba0a?auto=format&fit=crop&q=80&w=600',
   },
   {
@@ -30,7 +30,7 @@ const blogPosts: BlogPost[] = [
     tagColor: 'text-emerald-500',
     date: 'March 16, 2023',
     title: 'Pulsating News and Insights Above.',
-    desc: 'Sed finibus amet dolor maximus sodales egestas ut elit id sollicitudin.',
+    desc: 'Fresh tips for planning safe aerial shoots, picking the right equipment, and capturing compelling motion from the sky.',
     image: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=600',
   },
   {
@@ -40,7 +40,7 @@ const blogPosts: BlogPost[] = [
     tagColor: 'text-indigo-500',
     date: 'March 16, 2023',
     title: 'Stories of High-Flying Adventures.',
-    desc: 'Sed finibus amet dolor maximus sodales egestas ut elit id sollicitudin.',
+    desc: 'Creative case studies from recent shoots showing how aerial imagery adds impact to events, marketing campaigns, and real estate storytelling.',
     image: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&q=80&w=600',
   },
 ];

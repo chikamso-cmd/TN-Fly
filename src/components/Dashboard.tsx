@@ -393,7 +393,7 @@ export default function Dashboard() {
                     type="text"
                     value={formBadge}
                     onChange={(e) => setFormBadge(e.target.value)}
-                    placeholder="None"
+                    placeholder="Best Value"
                     className={`w-full p-2.5 rounded-lg border focus:outline-none ${isDark ? 'bg-slate-900 border-slate-800 text-white' : 'bg-white border-slate-200'}`}
                   />
                 </div>
@@ -418,7 +418,7 @@ export default function Dashboard() {
                     required
                     value={formFeaturesText}
                     onChange={(e) => setFormFeaturesText(e.target.value)}
-                    placeholder="UHD 4K Drone Photography&#10;3-Min Cinematic Highlight Film&#10;Full Rights and Release"
+                    placeholder="UHD 4K Aerial Photography&#10;3-Min Cinematic Highlight Film&#10;Full Rights and Commercial License"
                     className={`w-full p-2.5 rounded-lg border focus:outline-none font-mono text-[11px] ${isDark ? 'bg-slate-900 border-slate-800 text-white' : 'bg-white border-slate-200'}`}
                   />
                 </div>

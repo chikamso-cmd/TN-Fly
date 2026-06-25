@@ -298,7 +298,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                           <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                           <input
                             type="text"
-                            placeholder="John Doe"
+                            placeholder="Alex Johnson"
                             className={`w-full pl-9 pr-4 py-2 rounded-xl text-xs border focus:outline-none transition-colors ${
                               isDark ? 'bg-slate-950 border-slate-800 text-white focus:border-sky-500' : 'bg-slate-50 border-slate-200 text-slate-950 focus:border-sky-500'
                             }`}
@@ -317,7 +317,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                           <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                           <input
                             type="email"
-                            placeholder="john@example.com"
+                            placeholder="alex@company.com"
                             className={`w-full pl-9 pr-4 py-2 rounded-xl text-xs border focus:outline-none transition-colors ${
                               isDark ? 'bg-slate-950 border-slate-800 text-white focus:border-sky-500' : 'bg-slate-50 border-slate-200 text-slate-950 focus:border-sky-500'
                             }`}
@@ -338,7 +338,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                           <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                           <input
                             type="text"
-                            placeholder="+234..."
+                            placeholder="+1 555 012 3456"
                             className={`w-full pl-9 pr-4 py-2 rounded-xl text-xs border focus:outline-none transition-colors ${
                               isDark ? 'bg-slate-950 border-slate-800 text-white focus:border-sky-500' : 'bg-slate-50 border-slate-200 text-slate-950 focus:border-sky-500'
                             }`}
@@ -415,7 +415,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                           <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                           <input
                             type="text"
-                            placeholder="e.g. Landmark Beach Hall, Lagos"
+                            placeholder="e.g. Harborview Hotel Terrace, Miami"
                             className={`w-full pl-9 pr-4 py-2 rounded-xl text-xs border focus:outline-none transition-colors ${
                               isDark ? 'bg-slate-950 border-slate-800 text-white focus:border-sky-500' : 'bg-slate-50 border-slate-200 text-slate-950 focus:border-sky-500'
                             }`}
@@ -451,7 +451,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                       </label>
                       <textarea
                         rows={2}
-                        placeholder="e.g. Sunset tracking shots of the garden, slow orbital views over the pool area..."
+                        placeholder="e.g. Sunset tracking reveal, low orbital sweep over the venue, and a top-down shot of the ceremony space"
                         className={`w-full px-3 py-2 rounded-xl text-xs border focus:outline-none transition-colors ${
                           isDark ? 'bg-slate-950 border-slate-800 text-white focus:border-sky-500' : 'bg-slate-50 border-slate-200 text-slate-950 focus:border-sky-500'
                         }`}

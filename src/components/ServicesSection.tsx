@@ -9,22 +9,22 @@ export default function ServicesSection({ onSelectService }: ServicesSectionProp
   const highlights = [
     {
       id: 'highlight-1',
-      title: 'Best quality image.',
-      desc: 'Breathtaking 20MP HDR photography with custom aerial coloring.',
+      title: 'Cinematic Photography',
+      desc: 'Professional aerial imaging with vivid HDR clarity, precision framing, and fast turnaround for marketing and event campaigns.',
       image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=600',
       icon: ImageIcon,
     },
     {
       id: 'highlight-2',
-      title: '4k Video Resolution.',
-      desc: 'Ultra high-definition video files with superior bitrates and steady loops.',
+      title: '4K Cinematic Video',
+      desc: 'Broadcast-quality footage with smooth stabilization, cinematic motion, and rich color for every aerial story.',
       image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=600',
       icon: Cpu,
     },
     {
       id: 'highlight-3',
-      title: 'Cinema Video Quality.',
-      desc: 'Hasselblad cameras & ProRes support for premium broadcast outputs.',
+      title: 'Survey & Inspection',
+      desc: 'Accurate aerial mapping, structure inspection, and monitoring services for construction, real estate, and land management.',
       image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600',
       icon: Video,
     },
@@ -37,7 +37,7 @@ export default function ServicesSection({ onSelectService }: ServicesSectionProp
         {/* Header */}
         <div className="text-center space-y-3 max-w-2xl mx-auto">
           <span className="text-xs uppercase tracking-widest font-mono font-bold text-slate-400">
-            Unlocking Possibilities
+            Transforming Visions
           </span>
           <h2 className="font-sans font-extrabold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight uppercase" id="services-heading">
             Cutting-Edge Drone Services

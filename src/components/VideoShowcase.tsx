@@ -40,7 +40,7 @@ export default function VideoShowcase() {
                 Camera Stabilization.
               </h2>
               <p className="text-slate-500 text-sm sm:text-base leading-relaxed font-light max-w-xl">
-                There are many variations passages Lorem Ipsum available, but majority have suffered alteration in some form, by injected randomized words which don't look even slightly believable.
+                Experience the precision of our integrated stabilization systems and how they turn powerful aerial motion into smooth, broadcast-ready storytelling.
               </p>
             </div>
 

@@ -29,7 +29,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-500 leading-relaxed font-light">
-              Quisque a felis nec nibh laoreet elementum id amet quis tortor. Professional drone photography, videography, mapping, and drone cinematography.
+              TN FLY specializes in professional aerial imagery, cinematic event coverage, precision surveys, and inspection flights for clients who need reliable drone production.
             </p>
             <ul className="space-y-3 text-xs sm:text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
