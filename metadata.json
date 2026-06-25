@@ -1,0 +1,6 @@
+{
+  "name": "TN Fly Drone Aerial Services",
+  "description": "A premium, conversion-focused booking & ticketing platform for TN Fly Drone Aerial Services, specializing in professional aerial photography, videography, mapping, and drone cinematography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

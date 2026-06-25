@@ -1,0 +1,174 @@
+import { motion } from 'motion/react';
+
+export default function WhyChooseUs() {
+  // We'll define the features with their positions and connector paths
+  // Left Side Features
+  const leftFeatures = [
+    {
+      id: 'lf-1',
+      title: 'Robust Structure',
+      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      top: '12%',
+      left: '10%',
+      dotX: '45%',
+      dotY: '42%',
+    },
+    {
+      id: 'lf-2',
+      title: 'Foldable Drone',
+      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      top: '46%',
+      left: '8%',
+      dotX: '34%',
+      dotY: '50%',
+    },
+    {
+      id: 'lf-3',
+      title: 'HD Video Recording',
+      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      top: '78%',
+      left: '10%',
+      dotX: '45%',
+      dotY: '72%',
+    },
+  ];
+
+  // Right Side Features
+  const rightFeatures = [
+    {
+      id: 'rf-1',
+      title: 'Easy Disassembly',
+      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      top: '12%',
+      right: '10%',
+      dotX: '55%',
+      dotY: '45%',
+    },
+    {
+      id: 'rf-2',
+      title: 'Motors',
+      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      top: '46%',
+      right: '8%',
+      dotX: '65%',
+      dotY: '48%',
+    },
+    {
+      id: 'rf-3',
+      title: 'Advance Technology',
+      desc: 'Donec tempus scelerisque malesuada Nunc effeclor protium Bibendum.',
+      top: '78%',
+      right: '10%',
+      dotX: '55%',
+      dotY: '60%',
+    },
+  ];
+
+  return (
+    <section className="py-24 sm:py-32 bg-white text-slate-900 relative overflow-hidden" id="diagram">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16 space-y-16">
+        
+        {/* Technical Diagram Container */}
+        <div className="relative w-full min-h-[500px] lg:min-h-[600px] flex items-center justify-center">
+          
+          {/* BACKGROUND SVG LINES FOR CONNECTORS (Visible on desktop/lg screens) */}
+          <div className="absolute inset-0 pointer-events-none hidden lg:block z-0">
+            <svg className="w-full h-full" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Left robust structure line */}
+              <path d="M 240 120 L 450 250" stroke="#E2E8F0" strokeWidth="1.5" strokeDasharray="4 4" />
+              {/* Left foldable drone line */}
+              <path d="M 240 300 L 360 300" stroke="#E2E8F0" strokeWidth="1.5" strokeDasharray="4 4" />
+              {/* Left HD recording line */}
+              <path d="M 240 480 L 450 430" stroke="#E2E8F0" strokeWidth="1.5" strokeDasharray="4 4" />
+
+              {/* Right easy disassembly line */}
+              <path d="M 760 120 L 550 250" stroke="#E2E8F0" strokeWidth="1.5" strokeDasharray="4 4" />
+              {/* Right motors line */}
+              <path d="M 760 300 L 640 290" stroke="#E2E8F0" strokeWidth="1.5" strokeDasharray="4 4" />
+              {/* Right advance technology line */}
+              <path d="M 760 480 L 550 380" stroke="#E2E8F0" strokeWidth="1.5" strokeDasharray="4 4" />
+            </svg>
+          </div>
+
+          {/* CENTER: Massive high-quality drone */}
+          <div className="relative z-10 w-full max-w-[450px] lg:max-w-[550px] mx-auto py-12 lg:py-0 flex items-center justify-center">
+            <motion.img 
+              src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&q=80&w=800"
+              alt="Center drone feature diagram model"
+              className="w-full h-auto object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] rounded-lg"
+              referrerPolicy="no-referrer"
+              animate={{ 
+                y: [0, -8, 0] 
+              }}
+              transition={{ 
+                repeat: Infinity, 
+                duration: 5, 
+                ease: "easeInOut" 
+              }}
+              id="diagram-center-drone"
+            />
+
+            {/* Interactive Pulse Dots */}
+            {/* Left 1 Robust Structure dot */}
+            <span className="absolute top-[42%] left-[45%] w-3 h-3 bg-[#E8FF1A] border-2 border-white rounded-full shadow-lg animate-pulse hidden lg:block" />
+            {/* Left 2 Foldable Drone dot */}
+            <span className="absolute top-[50%] left-[36%] w-3 h-3 bg-[#E8FF1A] border-2 border-white rounded-full shadow-lg animate-pulse hidden lg:block" />
+            {/* Left 3 HD Recording dot */}
+            <span className="absolute top-[72%] left-[45%] w-3 h-3 bg-[#E8FF1A] border-2 border-white rounded-full shadow-lg animate-pulse hidden lg:block" />
+
+            {/* Right 1 Easy Disassembly dot */}
+            <span className="absolute top-[42%] left-[55%] w-3 h-3 bg-[#E8FF1A] border-2 border-white rounded-full shadow-lg animate-pulse hidden lg:block" />
+            {/* Right 2 Motors dot */}
+            <span className="absolute top-[48%] left-[64%] w-3 h-3 bg-[#E8FF1A] border-2 border-white rounded-full shadow-lg animate-pulse hidden lg:block" />
+            {/* Right 3 Advance Tech dot */}
+            <span className="absolute top-[63%] left-[55%] w-3 h-3 bg-[#E8FF1A] border-2 border-white rounded-full shadow-lg animate-pulse hidden lg:block" />
+          </div>
+
+          {/* LEFT SIDE FEATURES: List */}
+          <div className="absolute inset-y-0 left-0 w-full lg:w-[320px] pointer-events-none flex flex-col justify-between py-8 lg:py-0 z-20">
+            {leftFeatures.map((item) => (
+              <div 
+                key={item.id}
+                className="pointer-events-auto bg-white/90 backdrop-blur-sm lg:bg-transparent p-4 lg:p-0 rounded-lg shadow-sm lg:shadow-none border lg:border-none border-slate-100 max-w-sm mx-auto lg:mx-0 lg:absolute space-y-1 transition-all duration-300 hover:scale-[1.02]"
+                style={{
+                  top: window.innerWidth >= 1024 ? item.top : undefined,
+                  left: window.innerWidth >= 1024 ? item.left : undefined,
+                }}
+              >
+                <h4 className="font-sans font-bold text-sm sm:text-base text-slate-900 tracking-tight">
+                  {item.title}
+                </h4>
+                <p className="text-slate-500 text-xs leading-relaxed max-w-[240px]">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* RIGHT SIDE FEATURES: List */}
+          <div className="absolute inset-y-0 right-0 w-full lg:w-[320px] pointer-events-none flex flex-col justify-between py-8 lg:py-0 z-20">
+            {rightFeatures.map((item) => (
+              <div 
+                key={item.id}
+                className="pointer-events-auto bg-white/90 backdrop-blur-sm lg:bg-transparent p-4 lg:p-0 rounded-lg shadow-sm lg:shadow-none border lg:border-none border-slate-100 max-w-sm mx-auto lg:mx-0 lg:absolute space-y-1 text-left lg:text-right transition-all duration-300 hover:scale-[1.02]"
+                style={{
+                  top: window.innerWidth >= 1024 ? item.top : undefined,
+                  right: window.innerWidth >= 1024 ? item.right : undefined,
+                }}
+              >
+                <h4 className="font-sans font-bold text-sm sm:text-base text-slate-900 tracking-tight">
+                  {item.title}
+                </h4>
+                <p className="text-slate-500 text-xs leading-relaxed max-w-[240px] lg:ml-auto">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+}
