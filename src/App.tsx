@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
 // Store
 import { useTicketStore } from './store/ticketStore';
@@ -14,7 +14,7 @@ import WhyChooseUs from './components/WhyChooseUs'; // Rendered as Drone Feature
 import VideoShowcase from './components/VideoShowcase';
 import PortfolioGallerySection from './components/PortfolioGallerySection'; // Rendered as Custom Media & Video Gallery
 import Testimonials from './components/Testimonials';
-import BlogSection from './components/BlogSection';
+// import BlogSection from './components/BlogSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 

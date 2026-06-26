@@ -17,7 +17,7 @@ export default function AboutSection() {
             className="absolute top-0 left-0 w-[65%] aspect-[3/4] rounded-sm overflow-hidden shadow-2xl z-0"
           >
             <img 
-              src="assets/photo.jpeg" 
+              src="/photo.jpeg" 
               alt="Aerial view of scenic landscape at night" 
               className="w-full h-full object-cover filter brightness-90"
               referrerPolicy="no-referrer"
@@ -34,7 +34,7 @@ export default function AboutSection() {
             className="absolute bottom-0 right-0 w-[65%] aspect-[3/4] rounded-sm overflow-hidden shadow-2xl z-10 border-8 border-white"
           >
             <img 
-              src="assets/drone-over-beach-stockcake.jpg" 
+              src="/drone-over-beach-stockcake.jpg" 
               alt="Hand holding drone over spectacular coast" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

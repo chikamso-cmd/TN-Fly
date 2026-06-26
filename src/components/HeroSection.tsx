@@ -14,7 +14,7 @@ export default function HeroSection({ onExplore, onContact }: HeroSectionProps) 
       {/* Background aerial drone image with dark overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="assets/hero-main.webp" 
+          src="/hero-main.webp" 
           alt="Aerial scenic landscape backdrop" 
           className="w-full h-full object-cover filter brightness-50"
           referrerPolicy="no-referrer"
