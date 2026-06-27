@@ -6,12 +6,12 @@ export default function VideoShowcase() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <section className="py-24 sm:py-32 bg-slate-50 text-slate-900 overflow-hidden" id="video-showcase">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16">
+    <section className=" bg-slate-50 text-slate-900 overflow-hidden" id="video-showcase">
+      <div className=" mx-auto  ">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* LEFT COLUMN: Video Thumbnail with Centered Yellow Play Button */}
-          <div className="lg:col-span-6 relative aspect-video sm:aspect-[4/3] rounded-sm overflow-hidden shadow-2xl group">
+          <div className="lg:col-span-6 relative aspect-video  sm:aspect-[6/3] rounded-sm overflow-hidden shadow-2xl group">
             <img 
               src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" 
               alt="Professional female pilot operating a drone" 
@@ -33,7 +33,7 @@ export default function VideoShowcase() {
           </div>
 
           {/* RIGHT COLUMN: Informational Panel */}
-          <div className="lg:col-span-6 space-y-8 text-left">
+          <div className="lg:col-span-6 space-y-8 text-left px-5">
             <div className="space-y-4">
               <h2 className="font-sans font-extrabold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight" id="video-showcase-heading">
                 The Power of Integrated <br />

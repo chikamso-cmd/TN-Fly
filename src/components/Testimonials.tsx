@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 interface SingleTestimonial {
   id: string;
@@ -36,6 +37,9 @@ const testimonials: SingleTestimonial[] = [
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const goPrev = () => setActiveIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  const goNext = () => setActiveIndex((prev) => (prev + 1) % testimonials.length);
+
   // Auto rotate carousel every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
@@ -45,7 +49,17 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="py-24 sm:py-32 bg-white text-slate-900 overflow-hidden relative" id="testimonials">
+    <section
+      id="testimonials"
+      className="py-24 sm:py-32 bg-white text-slate-900 overflow-hidden relative"
+      style={{
+        backgroundImage:
+          'url(https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1600)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="absolute inset-0 bg-white/85" />
       <div className="max-w-4xl mx-auto px-6 sm:px-12 text-center space-y-10 relative z-10">
 
          <div className="space-y-6 text-center lg:text-left max-w-3xl mx-auto">
@@ -63,7 +77,7 @@ export default function Testimonials() {
         </div> */}
 
         {/* Dynamic Testimonial Carousel Text */}
-        <div className="min-h-[140px] flex items-center justify-center">
+        <div className="relative min-h-[140px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
@@ -88,6 +102,25 @@ export default function Testimonials() {
               </div>
             </motion.div>
           </AnimatePresence>
+
+          <div className="absolute inset-x-0 top-1/2 flex items-center justify-between px-4 -translate-y-1/2 gap-4 sm:px-6">
+            <button
+              type="button"
+              onClick={goPrev}
+              className="rounded-full bg-white/90 text-slate-900 shadow-sm border border-slate-200 p-2 transition hover:bg-white"
+              aria-label="Previous testimonial"
+            >
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+            <button
+              type="button"
+              onClick={goNext}
+              className="rounded-full bg-white/90 text-slate-900 shadow-sm border border-slate-200 p-2 transition hover:bg-white"
+              aria-label="Next testimonial"
+            >
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Overlapping client avatar row matching reference */}
