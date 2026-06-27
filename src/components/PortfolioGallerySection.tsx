@@ -18,7 +18,7 @@ const galleryData: GalleryItem[] = [
     type: 'video',
     title: 'Autumn Forest Canopy',
     category: 'Cinematic',
-    thumbnail: 'https://images.unsplash.com/photo-1501597301489-8b75b675ba0a?auto=format&fit=crop&q=80&w=800',
+    thumbnail: '/autumn-forest.jpg',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Ultra HD 4K aerial sweep over deep orange forest canopies in New England.'
   },
@@ -27,7 +27,7 @@ const galleryData: GalleryItem[] = [
     type: 'image',
     title: 'Ocean Coast Cliffside',
     category: 'Photography',
-    thumbnail: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800',
+    thumbnail: '/clif.jpg',
     description: 'Breathtaking 20MP HDR shot capturing deep turquoise water crashing against basalt cliffs.'
   },
   {
@@ -44,7 +44,7 @@ const galleryData: GalleryItem[] = [
     type: 'image',
     title: 'Agricultural Crop Mapping',
     category: 'Mapping',
-    thumbnail: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=800',
+    thumbnail: '/agricultural.jpeg',
     description: 'Orthomosaic mapping layout showing crop health and structural moisture index.'
   },
   {
@@ -61,7 +61,7 @@ const galleryData: GalleryItem[] = [
     type: 'image',
     title: 'Wind Turbine Inspection',
     category: 'Inspection',
-    thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800',
+    thumbnail: '/windturbine.jpeg',
     description: 'High-detail close-up photograph of rotor blade tips for predictive maintenance.'
   }
 ];

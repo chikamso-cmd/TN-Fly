@@ -27,8 +27,8 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
           className="flex items-center gap-3 cursor-pointer select-none group"
           onClick={() => setViewMode('landing')}
         >
-          <div className="p-2 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
-            <Camera className="w-5 h-5 text-[#E8FF1A]" />
+          <div className="p-1 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
+           <img src="/dronelogo.png" alt="drone logo" className="w-10 object-fit" />
           </div>
           <div>
             <h1 className="font-sans font-black text-sm md:text-base tracking-widest uppercase text-slate-950">

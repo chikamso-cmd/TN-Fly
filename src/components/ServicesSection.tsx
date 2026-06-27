@@ -55,7 +55,7 @@ export default function ServicesSection({ onSelectService }: ServicesSectionProp
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                onClick={() => onSelectService(item.title)}
+                // onClick={() => onSelectService(item.title)}
                 className="group relative h-[450px] rounded-sm overflow-hidden shadow-xl cursor-pointer flex flex-col justify-end p-8 text-white"
                 id={`services-card-${index}`}
               >

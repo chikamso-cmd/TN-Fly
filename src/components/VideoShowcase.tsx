@@ -13,7 +13,7 @@ export default function VideoShowcase() {
           {/* LEFT COLUMN: Video Thumbnail with Centered Yellow Play Button */}
           <div className="lg:col-span-6 relative aspect-video  sm:aspect-[6/3] rounded-sm overflow-hidden shadow-2xl group">
             <img 
-              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" 
+              src="/hero-main.webp" 
               alt="Professional female pilot operating a drone" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               referrerPolicy="no-referrer"

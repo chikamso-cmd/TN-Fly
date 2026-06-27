@@ -28,7 +28,7 @@ export default function Footer() {
           
         >
           <div className="p-2 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
-            <Camera className="w-5 h-5 text-[#E8FF1A]" />
+             <img src="/dronelogo.png" alt="drone logo" className="w-15 object-fit" />
           </div>
           <div>
             <h1 className="font-sans font-black text-sm md:text-base tracking-widest uppercase text-slate-500">
@@ -45,11 +45,11 @@ export default function Footer() {
             <ul className="space-y-3 text-xs sm:text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#E8FF1A] flex-shrink-0 mt-0.5" />
-                <span>Q4M9+5C New York, USA.</span>
+                <span>Oyo Ibadan, Nigeria.</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#E8FF1A] flex-shrink-0" />
-                <span>+123 324 5879 66</span>
+                <span>+234 324 5879 66</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#E8FF1A] flex-shrink-0" />
