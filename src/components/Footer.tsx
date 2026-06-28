@@ -28,7 +28,7 @@ export default function Footer() {
           
         >
           <div className="p-2 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
-             <img src="/dronelogo.png" alt="drone logo" className="w-15 object-fit" />
+             <img src="/LOGO1.png" alt="drone logo" className="w-20 object-fit" />
           </div>
           <div>
             <h1 className="font-sans font-black text-sm md:text-base tracking-widest uppercase text-slate-500">

@@ -16,6 +16,7 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
     { href: '#services', label: 'Services' },
     { href: '#portfolio', label: 'Products' },
     { href: '#testimonials', label: 'Reviews' },
+    { href: '#Contact', label: 'BookNow' },
   ];
 
   return (
@@ -27,8 +28,8 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
           className="flex items-center gap-3 cursor-pointer select-none group"
           onClick={() => setViewMode('landing')}
         >
-          <div className="p-1 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
-           <img src="/dronelogo.png" alt="drone logo" className="w-10 object-fit" />
+          <div className="p-0.5 bg-black rounded-sm relative overflow-hidden group-hover:scale-105 transition-transform flex items-center justify-center">
+           <img src="/LOGO1.png" alt="Tnfly logo" className="w-15 object-fit" />
           </div>
           <div>
             <h1 className="font-sans font-black text-sm md:text-base tracking-widest uppercase text-slate-950">
@@ -49,36 +50,14 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
             {/* <a href="#video-showcase" className="transition-colors hover:text-rose-600">Stabilization</a> */}
             <a href="#portfolio" className="transition-colors hover:text-rose-600">Products</a>
             <a href="#testimonials" className="transition-colors hover:text-rose-600">Reviews</a>
-            {/* <a href="#blog" className="transition-colors hover:text-rose-600">Blog</a> */}
+            <a href="#Contact" className="transition-colors hover:text-rose-600">Book Now</a>
           </nav>
         )}
 
         {/* RIGHT SIDE ACTIONS */}
         <div className="flex items-center gap-2 md:gap-3">
           
-          {/* My Bookings Button */}
-          {/* <button
-            onClick={onOpenMyBookings}
-            className="px-3.5 py-2 rounded-sm text-[11px] font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 border border-dashed border-slate-200 bg-slate-50 text-slate-600 hover:text-slate-950 hover:border-slate-400 cursor-pointer"
-            id="nav-my-bookings"
-          >
-            <UserCheck className="w-3.5 h-3.5 text-slate-900" />
-            <span className="hidden sm:inline">My Bookings</span>
-          </button> */}
-
-          {/* Admin Dashboard Switcher */}
-          {/* <button
-            onClick={() => setViewMode(viewMode === 'landing' ? 'admin' : 'landing')}
-            className={`px-3.5 py-2 rounded-sm text-[11px] font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm border ${
-              viewMode === 'admin'
-                ? 'bg-rose-600 border-rose-600 text-white font-black'
-                : 'bg-slate-950 hover:bg-slate-800 text-white border-slate-950'
-            } cursor-pointer`}
-            id="nav-admin-portal"
-          >
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span>{viewMode === 'admin' ? 'Exit Admin' : 'Admin Portal'}</span>
-          </button> */}
+        
 
           {/* Book Now Button */}
           <button
@@ -91,13 +70,13 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
             {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
 
-          <button
-            onClick={onBookNow}
+          <a
+            href="#contact"
             className="hidden md:flex px-4 py-2 bg-[#E8FF1A] hover:bg-[#d4eb14] text-black border border-transparent hover:border-black/5 rounded-sm text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer shadow"
             id="nav-book-now"
           >
             Book Now
-          </button>
+          </a>
 
         </div>
       </div>

@@ -20,8 +20,9 @@ import Footer from './components/Footer';
 
 // Modals / Portals
 import CheckoutModal from './components/CheckoutModal';
-import MyTicketsModal from './components/MyTicketsModal';
+// import MyTicketsModal from './components/MyTicketsModal';
 import Dashboard from './components/Dashboard';
+import Contact from './components/Contact';
 
 export default function App() {
   const { faqs } = useTicketStore();
@@ -58,33 +59,33 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#E8FF1A] selection:text-black" id="app-wrapper">
-      
+
       {/* Toast Notifications */}
       <ToastContainer limit={3} aria-label="Secure Booking Notifications" />
 
       {/* Persistent Navigation */}
-      <Navbar 
-        viewMode={viewMode} 
-        setViewMode={setViewMode} 
-        onOpenMyBookings={() => setIsMyTicketsOpen(true)} 
+      <Navbar
+        viewMode={viewMode}
+        setViewMode={setViewMode}
+        onOpenMyBookings={() => setIsMyTicketsOpen(true)}
         onBookNow={() => handleOpenCheckout('Premium Coverage Package')}
       />
 
       {/* Main Content Render */}
       {viewMode === 'landing' ? (
         <main className="animate-[fadeIn_0.5s_ease]">
-          
+
           {/* 1. Hero segment with flexed side-by-side design */}
-          <HeroSection 
-            onExplore={() => handleScrollToSection('portfolio')} 
-            onContact={() => handleScrollToSection('footer')} 
+          <HeroSection
+            onExplore={() => handleScrollToSection('portfolio')}
+            onContact={() => handleScrollToSection('footer')}
           />
 
           {/* 2. About us info with counters */}
           <AboutSection />
 
           {/* 3. Premium drone services section */}
-          <ServicesSection 
+          <ServicesSection
             onSelectService={(serviceName) => handleOpenCheckout(serviceName)}
           />
 
@@ -104,17 +105,20 @@ export default function App() {
           {/* <BlogSection /> */}
 
           {/* 9. Expandable drone FAQs */}
-          <FaqSection 
-            faqs={faqs} 
+          <FaqSection
+            faqs={faqs}
           />
+          {/* 9. Expandable drone FAQs */}
+          <Contact />
 
           {/* 10. Global Footer */}
           <Footer />
 
         </main>
+
       ) : (
         <div className="max-w-7xl mx-auto px-6 py-10">
-          
+
           {/* Organizer operations control panel */}
           <Dashboard />
 
@@ -122,17 +126,17 @@ export default function App() {
       )}
 
       {/* Checkout wizard modal */}
-      <CheckoutModal 
-        isOpen={isCheckoutOpen} 
-        onClose={() => setIsCheckoutOpen(false)} 
-        initialTicketTypeId={selectedTicketTypeId} 
+      <CheckoutModal
+        isOpen={isCheckoutOpen}
+        onClose={() => setIsCheckoutOpen(false)}
+        initialTicketTypeId={selectedTicketTypeId}
       />
 
       {/* My Tickets Look-up digital wallet */}
-      <MyTicketsModal 
+      {/* <MyTicketsModal 
         isOpen={isMyTicketsOpen} 
         onClose={() => setIsMyTicketsOpen(false)} 
-      />
+      /> */}
 
     </div>
   );

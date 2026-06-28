@@ -276,7 +276,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                   }`}>
                     <p className="font-bold text-sky-400 flex items-center gap-1">
                       <Sparkles className="w-4 h-4 text-sky-400 animate-pulse" />
-                      ✨ Hello and welcome to TN Fly Drone Aerial Services! 🚁📸
+                      Hello and welcome to TN Fly Drone Aerial Services! 🚁📸
                     </p>
                     <p>
                       Thank you for reaching out — we're excited to capture your moments from the sky and bring your vision to life with stunning aerial visuals.
@@ -460,7 +460,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                     </div>
 
                     {/* Drag & Drop File Upload */}
-                    <div>
+                    {/* <div>
                       <label className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-2">
                         Upload Reference Images / Storyboards
                       </label>
@@ -491,7 +491,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                           )}
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* Submit Row */}
                     <div className="pt-4 border-t border-slate-500/10 text-right">
@@ -515,17 +515,17 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                   animate={{ opacity: 1, x: 0 }}
                   className="space-y-5 pt-4"
                 >
-                  <div className="flex justify-between items-center">
+                  {/* <div className="flex justify-between items-center">
                     <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
                       Select Flight Package Tier
                     </h3>
                     <span className="text-[9px] font-mono text-sky-400 bg-sky-500/15 border border-sky-500/20 px-2 py-0.5 rounded font-bold uppercase">
                       REF: {createdBooking.referenceId}
                     </span>
-                  </div>
+                  </div> */}
 
                   {/* Pricing Cards Grid inside layout */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {packages.map((pkg) => {
                       const isSelected = selectedPackageId === pkg.id;
                       return (
@@ -566,7 +566,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                         </div>
                       );
                     })}
-                  </div>
+                  </div> */}
 
                   {/* Summary card with calculated price details */}
                   <div className={`p-4 rounded-2xl border space-y-3 text-xs ${
@@ -592,10 +592,10 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                       <span className="font-semibold">{createdBooking.eventDuration} Hours</span>
                     </div>
 
-                    <div className="flex justify-between border-t border-slate-500/10 pt-2.5 font-bold text-sm">
+                    {/* <div className="flex justify-between border-t border-slate-500/10 pt-2.5 font-bold text-sm">
                       <span>Calculated Charge:</span>
                       <span className="text-sky-400 font-mono">${finalPrice}</span>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Control Rows */}
@@ -640,9 +640,9 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                   {/* Supported Payment Channels Grid */}
                   <div className="grid grid-cols-2 gap-2">
                     {[
-                      { id: 'Paystack', desc: 'Secure African Gateway' },
-                      { id: 'Flutterwave', desc: 'Mobile Money & Cards' },
-                      { id: 'Debit Card', desc: 'Instant Processing' },
+                      // { id: 'Paystack', desc: 'Secure African Gateway' },
+                      // { id: 'Flutterwave', desc: 'Mobile Money & Cards' },
+                      // { id: 'Debit Card', desc: 'Instant Processing' },
                       { id: 'Bank Transfer', desc: 'Wire confirmation' }
                     ].map(pay => (
                       <button
@@ -669,7 +669,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                   <div className={`p-4 rounded-2xl border text-xs leading-relaxed space-y-3 ${
                     isDark ? 'bg-slate-950/40 border-slate-800' : 'bg-slate-50 border-slate-200'
                   }`}>
-                    {paymentMethod === 'Debit Card' && (
+                    {/* {paymentMethod === 'Debit Card' && (
                       <div className="space-y-2">
                         <p className="font-bold text-[10px] text-slate-400 uppercase tracking-widest mb-2">Card Details</p>
                         <div className="space-y-2">
@@ -700,9 +700,9 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                           </div>
                         </div>
                       </div>
-                    )}
+                    )} */}
 
-                    {paymentMethod === 'Paystack' && (
+                    {/* {paymentMethod === 'Paystack' && (
                       <div className="text-center py-4 space-y-1.5">
                         <p className="font-semibold text-slate-300">Authorize Paystack Gateway redirect</p>
                         <p className="text-[10px] text-slate-500">Supports direct bank deposits, USSD pins, and cards safely.</p>
@@ -714,7 +714,7 @@ export default function CheckoutModal({ isOpen, onClose, initialTicketTypeId }: 
                         <p className="font-semibold text-slate-300">Open Flutterwave modal checkout</p>
                         <p className="text-[10px] text-slate-500">Supports multi-currency bank accounts, card payments, and wallets.</p>
                       </div>
-                    )}
+                    )} */}
 
                     {paymentMethod === 'Bank Transfer' && (
                       <div className="space-y-2 font-mono text-[11px] text-slate-300">
