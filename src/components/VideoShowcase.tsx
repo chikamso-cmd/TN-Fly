@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Play, X, Cpu, Scale } from 'lucide-react';
+import VideoCTA from './VideoCTA';
 
 export default function VideoShowcase() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -12,24 +13,25 @@ export default function VideoShowcase() {
           
           {/* LEFT COLUMN: Video Thumbnail with Centered Yellow Play Button */}
           <div className="lg:col-span-6 relative aspect-video  sm:aspect-[6/3] rounded-sm overflow-hidden shadow-2xl group">
-            <img 
+            {/* <img 
               src="/hero-main.webp" 
               alt="Professional female pilot operating a drone" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               referrerPolicy="no-referrer"
               id="video-showcase-thumbnail"
-            />
+            /> */}
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/35 group-hover:bg-black/25 transition-colors duration-300" />
+            {/* <div className="absolute inset-0 bg-black/35 group-hover:bg-black/25 transition-colors duration-300" /> */}
 
             {/* Centered Yellow Play Button */}
-            <button 
+            {/* <button 
               onClick={() => setIsVideoPlaying(true)}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#E8FF1A] text-black flex items-center justify-center shadow-xl active:scale-90 group-hover:scale-110 transition-all duration-300 cursor-pointer"
               id="video-play-btn"
             >
               <Play className="w-6 h-6 sm:w-8 sm:h-8 fill-black text-black ml-1" />
-            </button>
+            </button> */}
+            <VideoCTA />
           </div>
 
           {/* RIGHT COLUMN: Informational Panel */}

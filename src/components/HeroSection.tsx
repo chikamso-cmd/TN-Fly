@@ -8,21 +8,21 @@ interface HeroSectionProps {
 
 const heroSlides = [
   {
-    src: '/hero-main.webp',
+    src: '/arialview.jpg',
     alt: 'Aerial scenic landscape backdrop',
     title: ['Exploring The', 'Skies with Drones.'],
     description:
       'From cinematic event coverage to precision mapping and inspection flights, TN FLY delivers bold aerial visuals with fast turnarounds and professional support.',
   },
   {
-    src: '/hero-drone.jpg',
+    src: '/dept.jpg',
     alt: 'Drone flying above a coastal landscape',
     title: ['Precision', 'Flight, Premium Results.'],
     description:
       'We combine cinematic motion with technical accuracy for events, inspections, and high-impact marketing content.',
   },
   {
-    src: '/photo.jpeg',
+    src: '/poly.jpg',
     alt: 'Drone capturing a sweeping outdoor scene',
     title: ['Elevated', 'Storytelling, Anywhere.'],
     description:

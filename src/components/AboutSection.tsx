@@ -3,11 +3,11 @@ import { Award, Zap, Heart } from 'lucide-react';
 
 export default function AboutSection() {
   return (
-    <section className="py-24 sm:py-32 bg-white text-slate-900 overflow-hidden" id="about">
+    <section className="py-15 sm:py-15 bg-white text-slate-900 overflow-hidden" id="about">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-15 items-center">
         
         {/* LEFT COLUMN: Two Overlapping Images exactly matching reference */}
-        <div className="lg:col-span-6 relative flex items-center justify-center min-h-[380px] sm:min-h-[480px]">
+        <div className="lg:col-span-6 relative flex items-center justify-center min-h-[380px] sm:min-h-[480px] ">
           {/* Back Image (Top Left) */}
           <motion.div
             initial={{ opacity: 0, x: -30, y: -20 }}
@@ -44,7 +44,7 @@ export default function AboutSection() {
         </div>
 
         {/* RIGHT COLUMN: Snapping Fantastic Moments & Landscapes */}
-        <div className="lg:col-span-6 space-y-8 text-left">
+        <div className="lg:col-span-6 space-y-8 text-left sm:mt-30">
           <div className="space-y-4">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}

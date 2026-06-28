@@ -27,7 +27,7 @@ const galleryData: GalleryItem[] = [
     type: 'image',
     title: 'Ocean Coast Cliffside',
     category: 'Photography',
-    thumbnail: '/clif.jpg',
+    thumbnail: '/poly.jpg',
     description: 'Breathtaking 20MP HDR shot capturing deep turquoise water crashing against basalt cliffs.'
   },
   {
@@ -35,8 +35,7 @@ const galleryData: GalleryItem[] = [
     type: 'video',
     title: 'Downtown Skyscraper Glide',
     category: 'Commercial',
-    thumbnail: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80&w=800',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    thumbnail: '/sec.jpg',
     description: 'Dynamic FPV fly-through around architectural skyscrapers during sunset golden hour.'
   },
   {
@@ -52,8 +51,7 @@ const galleryData: GalleryItem[] = [
     type: 'video',
     title: 'Mountain Ridge Horizon',
     category: 'Cinematic',
-    thumbnail: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&q=80&w=800',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    thumbnail: '/dept.jpg',
     description: 'Scenic high-altitude ascent over mountain peaks catching first sunrise light.'
   },
   {
@@ -61,7 +59,7 @@ const galleryData: GalleryItem[] = [
     type: 'image',
     title: 'Wind Turbine Inspection',
     category: 'Inspection',
-    thumbnail: '/windturbine.jpeg',
+    thumbnail: '/arialview.jpg',
     description: 'High-detail close-up photograph of rotor blade tips for predictive maintenance.'
   }
 ];

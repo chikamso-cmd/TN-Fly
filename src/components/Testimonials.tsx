@@ -51,7 +51,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-24 sm:py-32 bg-white text-slate-900 overflow-hidden relative"
+      className="py-15 sm:py-15 bg-white text-slate-900 overflow-hidden relative"
       style={{
         backgroundImage:
           'url(https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1600)',
@@ -70,11 +70,6 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
         </div>
-        
-        {/* Giant curved quotation symbol matching reference */}
-        {/* <div className="flex justify-center" id="testimonials-quote-mark">
-          <span className="font-serif text-[80px] sm:text-[90px] leading-none text-slate-800 select-none">”</span>
-        </div> */}
 
         {/* Dynamic Testimonial Carousel Text */}
         <div className="relative min-h-[140px] flex items-center justify-center">
