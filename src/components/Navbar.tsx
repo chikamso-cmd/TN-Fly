@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Camera, ShieldCheck, UserCheck, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   viewMode: 'landing' | 'admin';

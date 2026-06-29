@@ -16,11 +16,11 @@ const galleryData: GalleryItem[] = [
   {
     id: 'gal-1',
     type: 'video',
-    title: 'Autumn Forest Canopy',
+    title: '2025 All White Party',
     category: 'Cinematic',
-    thumbnail: '/autumn-forest.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    description: 'Ultra HD 4K aerial sweep over deep orange forest canopies in New England.'
+    thumbnail: '/whiteall.jpg',
+    videoUrl: 'https://youtu.be/lmUVAi82SH4?si=RqBLznTT8UgxYydp',
+    description: 'Ultra HD 4K aerial capture of the all white party. in Ibadan Oyo State.'
   },
   {
     id: 'gal-2',

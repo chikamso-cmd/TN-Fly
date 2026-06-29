@@ -11,7 +11,7 @@ export default function ServicesSection({ onSelectService }: ServicesSectionProp
       id: 'highlight-1',
       title: 'Cinematic Photography',
       desc: 'Professional aerial imaging with vivid HDR clarity, precision framing, and fast turnaround for marketing and event campaigns.',
-      image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=600',
+      image: '/white.jpg',
       icon: ImageIcon,
     },
     {

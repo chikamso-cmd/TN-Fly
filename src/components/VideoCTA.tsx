@@ -29,7 +29,7 @@ const VideoCTA = () => {
       {/* Video Background */}
       <video
         ref={videoRef}
-        src="/tnfly.mp4" 
+        src="/video2.mp4" 
         autoPlay
         muted
         loop
