@@ -12,7 +12,7 @@ export default function VideoShowcase() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* LEFT COLUMN: Video Thumbnail with Centered Yellow Play Button */}
-          <div className="lg:col-span-6 relative aspect-video  sm:aspect-[6/3] rounded-sm overflow-hidden shadow-2xl group">
+          <div className="lg:col-span-6 relative aspect-video  sm:aspect-[4/3] rounded-sm overflow-hidden shadow-2xl group">
             {/* <img 
               src="/hero-main.webp" 
               alt="Professional female pilot operating a drone" 

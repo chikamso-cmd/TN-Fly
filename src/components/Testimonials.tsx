@@ -14,21 +14,21 @@ const testimonials: SingleTestimonial[] = [
   {
     id: 't-1',
     quote: 'TN FLY delivered stunning aerial footage for our resort launch. The team was punctual, professional, and the final edit exceeded our expectations.',
-    author: 'Brian Cumin',
+    author: 'Femi Kayode',
     role: 'Hospitality Director',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150',
   },
   {
     id: 't-2',
     quote: 'Our construction survey became faster and safer with clear aerial inspection footage. The drone team helped us spot issues before they became costly delays.',
-    author: 'Sarah Jenkins',
+    author: 'Kehinde Sola',
     role: 'Real Estate Developer',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
   },
   {
     id: 't-3',
     quote: 'Our wedding video featured epic aerial reveals and gentle cinematic movement. The drone team made the whole process feel effortless.',
-    author: 'Marcus Sterling',
+    author: 'Opeyemi Oladigbo',
     role: 'Event Coordinator',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150',
   }

@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#E8FF1A] flex-shrink-0" />
-                <span className="truncate">info@tnflydrone.com</span>
+                <span className="truncate">francistope2@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -16,7 +16,7 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
     { href: '#services', label: 'Services' },
     { href: '#portfolio', label: 'Products' },
     { href: '#testimonials', label: 'Reviews' },
-    { href: '#Contact', label: 'BookNow' },
+    { href: '#Contact', label: 'Book Now' },
   ];
 
   return (
@@ -44,13 +44,13 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
         {/* MIDDLE NAV LINKS */}
         {viewMode === 'landing' && (
           <nav className="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-slate-500">
-            <a href="#about" className="transition-colors hover:text-rose-600">About</a>
-            <a href="#services" className="transition-colors hover:text-rose-600">Services</a>
+            <a href="#about" className="transition-colors hover:bg-[#d4eb14] hover:text-black p-2 rounded-sm px-5">About</a>
+            <a href="#services" className="transition-colors hover:bg-[#d4eb14] hover:text-black p-2 rounded-sm px-5">Services</a>
             {/* <a href="#diagram" className="transition-colors hover:text-rose-600">Tech Specs</a> */}
             {/* <a href="#video-showcase" className="transition-colors hover:text-rose-600">Stabilization</a> */}
-            <a href="#portfolio" className="transition-colors hover:text-rose-600">Products</a>
-            <a href="#testimonials" className="transition-colors hover:text-rose-600">Reviews</a>
-            <a href="#Contact" className="transition-colors hover:text-rose-600">Book Now</a>
+            <a href="#portfolio" className=" hover:bg-[#d4eb14] hover:text-black p-2 rounded-sm px-5">Products</a>
+            <a href="#testimonials" className="transition-colors hover:bg-[#d4eb14] hover:text-black p-2 rounded-sm px-5">Reviews</a>
+            <a href="#Contact" className="transition-colors hover:bg-[#d4eb14] hover:text-black p-2 rounded-sm px-5">Book Now</a>
           </nav>
         )}
 
@@ -70,31 +70,35 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
             {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
 
-          <a
-            href="#contact"
+          {/* <button
+            type='button'
+            onClick={() => {
+              // setIsMobileMenuOpen(false);
+              onBookNow();
+            }}
             className="hidden md:flex px-4 py-2 bg-[#E8FF1A] hover:bg-[#d4eb14] text-black border border-transparent hover:border-black/5 rounded-sm text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer shadow"
             id="nav-book-now"
           >
-            Book Now
-          </a>
+            Enroll Now
+          </button> */}
 
         </div>
       </div>
 
       {viewMode === 'landing' && (
         <div className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ${isMobileMenuOpen ? 'max-h-[420px]' : 'max-h-0'}`}>
-          <nav className="flex flex-col gap-3 px-6 pb-4 text-sm font-bold uppercase tracking-wider text-slate-700 border-t border-slate-200 bg-white/95 backdrop-blur-md">
+          <nav className="flex flex-col gap-3 px-6 pb-4 pt-10 text-sm font-bold uppercase tracking-wider text-slate-700 border-t border-slate-200 bg-white/95 backdrop-blur-md">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-3 transition-colors hover:text-rose-600"
+                className="block py-3 transition-colors hover:bg-[#d4eb14] hover:text-black p-2 w-50 rounded-lg"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <button
+            {/* <button
               type="button"
               onClick={() => {
                 setIsMobileMenuOpen(false);
@@ -102,8 +106,8 @@ export default function Navbar({ viewMode, setViewMode, onOpenMyBookings, onBook
               }}
               className="w-full py-3 mt-2 bg-[#E8FF1A] hover:bg-[#d4eb14] text-black rounded-sm text-[11px] font-bold uppercase tracking-wider transition-all shadow"
             >
-              Book Now
-            </button>
+              Enroll Now
+            </button> */}
           </nav>
         </div>
       )}

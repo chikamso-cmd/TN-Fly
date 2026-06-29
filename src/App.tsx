@@ -23,6 +23,7 @@ import CheckoutModal from './components/CheckoutModal';
 // import MyTicketsModal from './components/MyTicketsModal';
 import Dashboard from './components/Dashboard';
 import Contact from './components/Contact';
+import CTASection from './components/CTASection';
 
 export default function App() {
   const { faqs } = useTicketStore();
@@ -68,7 +69,7 @@ export default function App() {
         viewMode={viewMode}
         setViewMode={setViewMode}
         onOpenMyBookings={() => setIsMyTicketsOpen(true)}
-        onBookNow={() => handleOpenCheckout('Premium Coverage Package')}
+        onBookNow={() => handleOpenCheckout('CTA')}
       />
 
       {/* Main Content Render */}
@@ -78,7 +79,7 @@ export default function App() {
           {/* 1. Hero segment with flexed side-by-side design */}
           <HeroSection
             onExplore={() => handleScrollToSection('portfolio')}
-            onContact={() => handleScrollToSection('footer')}
+            onContact={() => handleScrollToSection('contact')}
           />
 
           {/* 2. About us info with counters */}
@@ -102,7 +103,7 @@ export default function App() {
           <Testimonials />
 
           {/* 8. Flight Notes & Stories Blog Section */}
-          {/* <BlogSection /> */}
+          <CTASection />
 
           {/* 9. Expandable drone FAQs */}
           <FaqSection
