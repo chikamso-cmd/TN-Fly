@@ -33,10 +33,11 @@ const galleryData: GalleryItem[] = [
   {
     id: 'gal-3',
     type: 'video',
-    title: 'Downtown Skyscraper Glide',
+    title: 'Arial View of the Polytechnic Ibadan',
     category: 'Commercial',
-    thumbnail: '/sec.jpg',
-    description: 'Dynamic FPV fly-through around architectural skyscrapers during sunset golden hour.'
+    thumbnail: '/arialpoly.png',
+    videoUrl: 'https://youtube.com/shorts/8t8z50zf3_Y?si=dwgzkDwzA_CKYzUs',
+    description: 'Dynamic FPV fly-through around architectural building during sunset golden hour in the polytechnic ibadan.'
   },
   {
     id: 'gal-4',
@@ -49,10 +50,11 @@ const galleryData: GalleryItem[] = [
   {
     id: 'gal-5',
     type: 'video',
-    title: 'Mountain Ridge Horizon',
+    title: 'Induction & Award Night of Joint Minds Club',
     category: 'Cinematic',
-    thumbnail: '/dept.jpg',
-    description: 'Scenic high-altitude ascent over mountain peaks catching first sunrise light.'
+    thumbnail: '/award.jpg',
+    videoUrl: 'https://youtu.be/VI8t60LMs2Q?si=xqKAznE2C4g4zy3D',
+    description: 'Scenic high-altitude ascent over gellani event center catching the scenic view of the induction & award night party.'
   },
   {
     id: 'gal-6',
