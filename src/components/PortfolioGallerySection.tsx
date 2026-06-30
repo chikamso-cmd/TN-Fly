@@ -12,6 +12,7 @@ interface GalleryItem {
   description: string;
 }
 
+
 const galleryData: GalleryItem[] = [
   {
     id: 'gal-1',
@@ -74,6 +75,26 @@ export default function PortfolioGallerySection() {
     if (activeFilter === 'all') return true;
     return item.type === activeFilter;
   });
+
+  // helper function
+  const getEmbedUrl = (url: string) => {
+    if (url.includes("youtu.be/")) {
+      const id = url.split("youtu.be/")[1].split("?")[0];
+      return `https://www.youtube.com/embed/${id}`;
+    }
+
+    if (url.includes("watch?v=")) {
+      const id = new URL(url).searchParams.get("v");
+      return `https://www.youtube.com/embed/${id}`;
+    }
+
+    if (url.includes("/shorts/")) {
+      const id = url.split("/shorts/")[1].split("?")[0];
+      return `https://www.youtube.com/embed/${id}`;
+    }
+
+    return url;
+  };
 
   return (
     <section className="py-24 sm:py-32 bg-white text-slate-900 overflow-hidden relative" id="portfolio">
@@ -220,11 +241,11 @@ export default function PortfolioGallerySection() {
               {/* Media Container */}
               <div className="aspect-video bg-black flex items-center justify-center">
                 {selectedMedia.type === 'video' && selectedMedia.videoUrl ? (
-                  <iframe 
-                    src={`${selectedMedia.videoUrl}?autoplay=1`} 
+                  <iframe
+                    src={`${getEmbedUrl(selectedMedia.videoUrl)}?autoplay=1&mute=1`}
                     title={selectedMedia.title}
                     className="w-full h-full border-none"
-                    allow="autoplay; encrypted-media; gyroscope"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
                 ) : (
